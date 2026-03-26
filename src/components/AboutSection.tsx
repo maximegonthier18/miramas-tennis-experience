@@ -4,7 +4,7 @@ import { Trophy, Users, Heart, Star } from "lucide-react";
 const stats = [
   { icon: Users, value: "300+", label: "Adhérents" },
   { icon: Trophy, value: "25+", label: "Années d'expérience" },
-  { icon: Star, value: "6", label: "Terrains" },
+  { icon: Star, value: "8", label: "Terrains" },
   { icon: Heart, value: "100%", label: "Passion" },
 ];
 
