@@ -1,5 +1,6 @@
 import logo from "@/assets/logo.jpg";
 import { Link } from "react-router-dom";
+import { Instagram } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -11,6 +12,15 @@ const Footer = () => {
             <span className="font-display text-xl text-primary-foreground tracking-wider">
               TC MIRAMAS
             </span>
+            <a
+              href="https://www.instagram.com/tcmiramas/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ml-3 text-primary-foreground/60 hover:text-accent transition-colors"
+              aria-label="Instagram TC Miramas"
+            >
+              <Instagram className="w-5 h-5" />
+            </a>
           </div>
 
           <div className="flex flex-wrap justify-center gap-6">
