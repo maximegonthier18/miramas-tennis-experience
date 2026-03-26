@@ -34,21 +34,27 @@ const ContactSection = () => {
                   <MapPin className="w-6 h-6 text-accent mt-1 flex-shrink-0" />
                   <div>
                     <p className="font-body font-semibold text-foreground">Adresse</p>
-                    <p className="font-body text-muted-foreground">Miramas, Bouches-du-Rhône (13)</p>
+                    <p className="font-body text-muted-foreground">TC Miramas</p>
+                    <p className="font-body text-muted-foreground">6 Rue des Lauriers</p>
+                    <p className="font-body text-muted-foreground">13140 Miramas</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <Phone className="w-6 h-6 text-accent mt-1 flex-shrink-0" />
                   <div>
                     <p className="font-body font-semibold text-foreground">Téléphone</p>
-                    <p className="font-body text-muted-foreground">À venir</p>
+                    <a href="tel:0627322350" className="font-body text-muted-foreground hover:text-accent transition-colors">
+                      06 27 32 23 50
+                    </a>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <Mail className="w-6 h-6 text-accent mt-1 flex-shrink-0" />
                   <div>
                     <p className="font-body font-semibold text-foreground">Email</p>
-                    <p className="font-body text-muted-foreground">À venir</p>
+                    <a href="mailto:tennisclubmiramas@orange.fr" className="font-body text-muted-foreground hover:text-accent transition-colors">
+                      tennisclubmiramas@orange.fr
+                    </a>
                   </div>
                 </div>
               </div>
