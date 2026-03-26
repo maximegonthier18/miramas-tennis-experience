@@ -1,28 +1,28 @@
 import ScrollReveal from "./ScrollReveal";
-import heroImg from "@/assets/hero-tennis.jpg";
-import clubhouseImg from "@/assets/clubhouse.jpg";
+import court1Img from "@/assets/court-1.avif";
+import court3Img from "@/assets/court-3.avif";
 
 const installations = [
   {
-    title: "Terrains en terre battue",
-    description: "6 terrains en terre battue entretenus quotidiennement pour des conditions de jeu optimales.",
-    image: heroImg,
+    title: "Terrains en Résine",
+    description: "7 terrains en résine dont 2 couverts, offrant des conditions de jeu idéales toute l'année.",
+    image: court3Img,
+    badge: "7 terrains",
   },
   {
-    title: "Club House",
-    description: "Un espace convivial avec terrasse, bar et vestiaires modernes pour se retrouver après les matchs.",
-    image: clubhouseImg,
+    title: "Terrain en Béton Poreux",
+    description: "1 terrain en béton poreux pour varier les surfaces et les plaisirs de jeu.",
+    image: court1Img,
+    badge: "1 terrain",
   },
 ];
 
 const InstallationsSection = () => {
   return (
     <section id="installations" className="py-24 bg-muted/50 relative">
-      {/* Parallax background */}
-      <div
-        className="absolute inset-0 opacity-5"
+      <div className="absolute inset-0 opacity-5"
         style={{
-          backgroundImage: `url(${heroImg})`,
+          backgroundImage: `url(${court3Img})`,
           backgroundAttachment: "fixed",
           backgroundSize: "cover",
           backgroundPosition: "center",
@@ -36,7 +36,7 @@ const InstallationsSection = () => {
             </h2>
             <div className="w-20 h-1 accent-gradient mx-auto rounded-full" />
             <p className="font-body text-muted-foreground mt-6 max-w-xl mx-auto">
-              Des installations de qualité pour tous les niveaux de pratique.
+              8 courts au total pour tous les niveaux de pratique.
             </p>
           </div>
         </ScrollReveal>
@@ -53,6 +53,9 @@ const InstallationsSection = () => {
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent" />
+                  <span className="absolute top-4 right-4 bg-accent text-accent-foreground font-display text-sm px-3 py-1 rounded-full">
+                    {item.badge}
+                  </span>
                 </div>
                 <div className="p-8">
                   <h3 className="font-display text-2xl text-foreground mb-3">{item.title}</h3>
@@ -62,12 +65,6 @@ const InstallationsSection = () => {
             </ScrollReveal>
           ))}
         </div>
-
-        <ScrollReveal delay={300}>
-          <p className="font-body text-center text-muted-foreground mt-12 italic">
-            Plus de photos et détails à venir prochainement...
-          </p>
-        </ScrollReveal>
       </div>
     </section>
   );
